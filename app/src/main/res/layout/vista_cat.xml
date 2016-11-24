@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:id="@+id/vista_cat"
+    android:background="#ffff">
+
+    <TextView
+        android:text="Desayuno"
+        android:textColor="#212121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_cat"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/imagen_cat"
+        app:srcCompat="@drawable/imagendesayuno"
+        android:layout_above="@+id/text_cat"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/text_comen_nombre">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/iconcomen"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/image_coment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Deyalik Delannoy"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_coment"
+        android:layout_toEndOf="@+id/image_coment"
+        android:layout_marginStart="25dp"
+        android:id="@+id/text_tips_nombre" />
+
+    <TextView
+        android:text="jaskajsjakdjekjdwkjedkjwekdjwe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_tips_nombre"
+        android:layout_toEndOf="@+id/image_coment"
+        android:layout_marginTop="12dp"
+        android:id="@+id/text_tips_com" />
+</RelativeLayout>

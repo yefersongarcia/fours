@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="unimagdalena.project.com.foursquare.MainActivity3">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        app:cardCornerRadius="4dp"
+        android:elevation="5dp"
+        android:id="@+id/card">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/inicio"
+                android:id="@+id/image_comen"
+                />
+
+
+
+            <TextView
+                android:text="Lulo Cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/image_comen"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#212121"
+                android:id="@+id/text_nomS" />
+
+            <TextView
+                android:text="Car 3# 16-34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="#212121"
+                android:id="@+id/text_direccion_s"
+                android:layout_below="@+id/text_nomS"
+                android:layout_alignStart="@+id/text_nomS" />
+
+            <TextView
+                android:text="Cafe, cafeteria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:textColor="#212121"
+                android:id="@+id/text_s_e"
+                android:layout_below="@+id/text_direccion_s"
+                android:layout_alignStart="@+id/text_direccion_s" />
+
+            <TextView
+                android:text="Abierto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_s_e"
+                android:layout_alignStart="@+id/text_s_e"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/text_estado" />
+
+            <TextView
+                android:text="8.9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:id="@+id/textS_cal"
+                android:layout_below="@+id/text_estado"
+                android:layout_toStartOf="@+id/text_estado"
+                android:layout_marginTop="11dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/receyclerTips"
+        android:layout_below="@+id/card"
+        android:layout_alignParentStart="true"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

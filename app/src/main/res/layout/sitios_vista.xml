@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4sp"
+        android:elevation="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/imagendesayuno"
+                android:id="@+id/image_sitio"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:text="1.Lulo cafe"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/image_sitio"
+                android:layout_marginTop="17dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/sitio_nombre" />
+
+
+            <io.techery.properratingbar.ProperRatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/poper"
+                app:prb_defaultRating="4"
+                app:prb_symbolicTick="$"
+                app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+                app:prb_symbolicTickSelectedColor="@android:color/holo_green_dark"
+                app:prb_totalTicks="5"
+                android:layout_alignBottom="@+id/text_epcialidad"
+                android:layout_toEndOf="@+id/text_epcialidad"
+                />
+
+            <TextView
+                android:text="Santa marta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_ciudad"
+                android:layout_below="@+id/poper"
+                android:layout_toEndOf="@+id/image_sitio"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:text="Café"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_epcialidad"
+                android:layout_below="@+id/sitio_nombre"
+                android:layout_toEndOf="@+id/image_sitio"
+                android:layout_marginTop="11dp" />
+
+            <TextView
+                android:text="El pan es delicioso"
+                android:textSize="15dp"
+                android:textColor="#212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_sitio"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/text_primer_coment" />
+
+            <TextView
+                android:text="Deyyalik Delannoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_primer_coment"
+                android:layout_alignStart="@+id/text_primer_coment"
+                android:layout_marginTop="14dp"
+                android:id="@+id/text_comentador" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

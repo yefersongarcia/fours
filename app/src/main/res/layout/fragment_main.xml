@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#cccaca"
+    tools:context="unimagdalena.project.com.foursquare.MainFragment">
+    <ImageView
+        android:id="@+id/imagenHome"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/inicio"/>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/matriz"
+        android:numColumns="3"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="#fff">
+    </LinearLayout>
+
+</LinearLayout>
